@@ -15,12 +15,12 @@
   },
   "autoload": {
     "psr-4": {
-      "SyrtisClient\\": "src/"
+      "SyrtisJsonSchemaHelper\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "SyrtisClient\\Tests\\": "tests/"
+      "SyrtisJsonSchemaHelper\\Tests\\": "tests/"
     }
   },
   "minimum-stability": "stable",
