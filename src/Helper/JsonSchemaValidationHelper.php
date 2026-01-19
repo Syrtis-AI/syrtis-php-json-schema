@@ -9,8 +9,13 @@ class JsonSchemaValidationHelper
     public static function validateOrThrow(
         object $schema,
         array $data,
-        string $contextLabel = 'schema'
+        string $contextLabel = 'schema',
+        bool $strict = true
     ): void {
+        if ($strict) {
+            $schema = JsonSchemaHelper::mergeAllOfSchema($schema);
+        }
+
         $dataObject = json_decode(json_encode($data, JSON_THROW_ON_ERROR));
         $result = (new Validator())->validate($dataObject, $schema);
 
