@@ -1,8 +1,8 @@
-# syrtis/php-client
+# syrtis/php-json-schema-helper
 
-Version: 0.0.12
+Version: 0.0.1
 
-PHP client library for interacting with Syrtis services and APIs.
+Helper to build and resolve json schemas.
 
 ## Table of Contents
 
