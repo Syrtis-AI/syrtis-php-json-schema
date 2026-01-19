@@ -1,5 +1,5 @@
 {
-  "name": "syrtis/php-json-schema-helper",
+  "name": "syrtis/php-json-schema",
   "description": "Helper to build and resolve json schemas.",
   "type": "library",
   "license": "MIT",
@@ -15,12 +15,12 @@
   },
   "autoload": {
     "psr-4": {
-      "SyrtisJsonSchemaHelper\\": "src/"
+      "SyrtisJsonSchema\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "SyrtisJsonSchemaHelper\\Tests\\": "tests/"
+      "SyrtisJsonSchema\\Tests\\": "tests/"
     }
   },
   "minimum-stability": "stable",
