@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyJsonSchema\Helper;
+namespace Syrtis\JsonSchema\Helper;
 
 class JsonSchemaHelper
 {

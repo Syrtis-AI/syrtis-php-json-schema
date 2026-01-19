@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyJsonSchema\Loader;
+namespace Syrtis\JsonSchema\Loader;
 
 use Wexample\SymfonyHelpers\Helper\JsonHelper;
 
