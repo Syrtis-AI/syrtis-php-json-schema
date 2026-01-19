@@ -6,4 +6,4 @@ global:
     name: weeger
   name: php_json_schema_helper
   vendor: syrtis
-  version: 0.0.1
+  version: 0.0.2
