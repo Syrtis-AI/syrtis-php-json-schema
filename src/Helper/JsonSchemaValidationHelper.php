@@ -10,9 +10,9 @@ class JsonSchemaValidationHelper
         object $schema,
         array $data,
         string $contextLabel = 'schema',
-        bool $strict = true
+        bool $flattenAllOf = true
     ): void {
-        if ($strict) {
+        if ($flattenAllOf) {
             $schema = JsonSchemaHelper::mergeAllOfSchema($schema);
         }
 
