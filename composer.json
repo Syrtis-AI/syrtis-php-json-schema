@@ -12,7 +12,7 @@
   "require": {
     "php": ">=8.1",
     "opis/json-schema": "^2.6.0",
-    "wexample/php-helpers": "*"
+    "wexample/php-helpers": "1.0.85"
   },
   "autoload": {
     "psr-4": {
@@ -26,5 +26,5 @@
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
