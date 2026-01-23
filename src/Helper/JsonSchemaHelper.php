@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyJsonSchema\Helper;
+namespace Syrtis\JsonSchema\Helper;
 
 class JsonSchemaHelper
 {
@@ -23,5 +23,40 @@ class JsonSchemaHelper
         unset($combined->allOf, $combined->{'$ref'}, $combined->unevaluatedProperties);
 
         return $combined;
+    }
+
+    public static function mergeAllOfSchema(
+        object $schema,
+        bool $strict = true
+    ): object {
+        if (! isset($schema->allOf) || ! is_array($schema->allOf)) {
+            return $schema;
+        }
+
+        $properties = (array) ($schema->properties ?? []);
+        $required = is_array($schema->required ?? null) ? $schema->required : [];
+
+        foreach ($schema->allOf as $entry) {
+            if (! is_object($entry)) {
+                continue;
+            }
+
+            $entryProperties = (array) ($entry->properties ?? []);
+            $entryRequired = is_array($entry->required ?? null) ? $entry->required : [];
+
+            $properties = array_merge($properties, $entryProperties);
+            $required = array_merge($required, $entryRequired);
+        }
+
+        $schema->properties = (object) $properties;
+        $schema->required = array_values(array_unique($required));
+
+        if ($strict) {
+            $schema->additionalProperties = false;
+        }
+
+        unset($schema->allOf, $schema->unevaluatedProperties);
+
+        return $schema;
     }
 }

@@ -1,6 +1,6 @@
 # syrtis/php-json-schema-helper
 
-Version: 0.0.2
+Version: 0.0.3
 
 Helper to build and resolve json schemas.
 

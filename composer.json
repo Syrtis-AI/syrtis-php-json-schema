@@ -11,19 +11,20 @@
   ],
   "require": {
     "php": ">=8.1",
-    "opis/json-schema": "^2.6.0"
+    "opis/json-schema": "^2.6.0",
+    "wexample/php-helpers": "*"
   },
   "autoload": {
     "psr-4": {
-      "SyrtisJsonSchema\\": "src/"
+      "Syrtis\\JsonSchema\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "SyrtisJsonSchema\\Tests\\": "tests/"
+      "Syrtis\\JsonSchema\\Tests\\": "tests/"
     }
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
