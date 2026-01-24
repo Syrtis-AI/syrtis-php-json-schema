@@ -1,5 +1,5 @@
 {
-  "name": "syrtis/php-json-schema-helper",
+  "name": "syrtis/php-json-schema",
   "description": "Helper to build and resolve json schemas.",
   "type": "library",
   "license": "MIT",
@@ -26,5 +26,5 @@
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
-  "version": "0.0.6"
+  "version": "0.0.7"
 }

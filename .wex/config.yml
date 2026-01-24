@@ -4,6 +4,6 @@ global:
   authors:
     email: contact@syrtis.ai
     name: weeger
-  name: php_json_schema_helper
+  name: php_json_schema
   vendor: syrtis
-  version: 0.0.6
+  version: 0.0.7
