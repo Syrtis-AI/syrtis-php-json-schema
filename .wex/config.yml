@@ -1,9 +1,7 @@
-git:
-  main_deployment_remote_name: github
 global:
   authors:
     email: contact@syrtis.ai
     name: weeger
   name: php_json_schema
   vendor: syrtis
-  version: 0.0.13
+  version: 0.0.14
