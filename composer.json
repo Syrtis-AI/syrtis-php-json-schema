@@ -1,30 +1,30 @@
 {
-  "name": "syrtis/php-json-schema",
-  "description": "Helper to build and resolve json schemas.",
-  "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Syrtis",
-      "email": "contact@syrtis.ai"
-    }
-  ],
-  "require": {
-    "php": ">=8.1",
-    "opis/json-schema": "^2.6.0",
-    "wexample/php-helpers": "1.0.95"
-  },
-  "autoload": {
-    "psr-4": {
-      "Syrtis\\JsonSchema\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Syrtis\\JsonSchema\\Tests\\": "tests/"
-    }
-  },
-  "minimum-stability": "stable",
-  "prefer-stable": true,
-  "version": "0.0.15"
+    "name": "syrtis/php-json-schema",
+    "description": "Helper to build and resolve json schemas.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Syrtis",
+            "email": "contact@syrtis.ai"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "opis/json-schema": "^2.6.0",
+        "wexample/php-helpers": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Syrtis\\JsonSchema\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Syrtis\\JsonSchema\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "version": "0.0.15"
 }
