@@ -1,6 +1,6 @@
 # php_json_schema
 
-Version: 0.0.17
+Version: 0.0.18
 
 Helper to build and resolve json schemas.
 
